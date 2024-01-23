@@ -1,7 +1,7 @@
 // script to recover funds from a disfunctional TON wallet client
 // based on an example from https://github.com/toncenter/tonweb/blob/master/src/contract/wallet/README.md
 
-const tonweb = require("tonweb") // npm install tonweb@0.0.60
+const tonweb = require("tonweb")
 const tonMnemonic = require("tonweb-mnemonic")
 const yargs = require('yargs/yargs');
 const { hideBin } = require('yargs/helpers');
@@ -83,18 +83,11 @@ function arrayToHexString(byteArray) {
 
 
 async function recoverTon() {
-    // settings
-    /*
-    const srcAddr = "" // your source TON wallet address
-    const PKSrc = "" // your private key (128 hex characters)
-    const dstAddr = "" // destination TON address to move funds to
-    const amountToSend = '0.01' // 0.01 TON
-    */
     const argv = getArgs()
     console.log("args:", argv)
     const srcAddr = argv.sourceAddress; // Your source TON wallet address
     const PKSrc = argv.privatekey; // Your private key (128 hex characters)
-    const mnemonic = argv.mnemonic;
+    const mnemonic = argv.mnemonic; // OR your 12-words mnemonic pjras
     const dstAddr = argv.destinationAddress; // Destination TON address to move funds to
     const amountToSend = argv.amount; // Amount to send (e.g., '0.01' TON)
     // end of settings
