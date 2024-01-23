@@ -5,11 +5,11 @@ This is a simple program that helps you move your TonCoin from an Atomic Wallet 
 ## Context
 For several months now, Atomic Wallet users have been experiencing issues with transferring TON to external wallets, stating that "TON sending operations might not work correctly in Atomic if your address is inactive on blockchain. ... Our team is working on the issue." And "Block explorer is currently unavailable".
 
-Given that TonCoins are indeed stored on the blockchain and Atomic Wallet allows for the export of secret keys, it should be possible to import these keys into any compatible wallet. However, a challenge arises because not many wallets neither support the 12-word mnemonic phrases, nor key the secret key export format utilized by Atomic Wallet. To address this inconvenience, I have developed this handy tool.
+Given that TonCoins are indeed stored on the blockchain and Atomic Wallet allows for the export of secret keys, it should be possible to import these keys into any compatible wallet. However, a challenge arises because no wallets either support the 12-word mnemonic phrases, or the secret key export format utilized by Atomic Wallet. To address this inconvenience, I have developed this handy tool.
 
 ## What This Tool Can Do For You
-* It lets you transfer TonCoin to a new wallet if you have either the special phrase (mnemonic phrase) or a secret key.
-* Think of it as a very basic version of a TonCoin wallet that can manage any TonCoin address you have the right to access.
+* It lets you transfer TonCoin to a new wallet if you have either a secret key or a special backup phrase (mnemonic).
+* Think of it as a very basic version of a TonCoin wallet that can manage any TonCoin address you have credentials for.
 * This tool was created using an example from the TonCoin community, found here: https://github.com/toncenter/tonweb/blob/master/src/contract/wallet/README.md
 
 
@@ -51,7 +51,7 @@ npm ci
 * Click on Show Private Keys.
 * Read the warning, agree to it, and then find "Toncoin".
 * Click SHOW PRIVATE KEY and copy the long string of characters. Send it to yourself but keep it secret! You will need it in the next steps.
-* Alternatively you can export your 12-word backup phrase and use it with the tool `--mnemonic` option instead of `--privatekey`
+* Alternatively the same way you can export your "12-word backup phrase" and use it with the tool `--mnemonic` option instead of `--privatekey`.
 
 **Important**: Never share your secret key or mnemonic phrase! If someone else gets it, they can take your coins.
 
@@ -80,8 +80,8 @@ The --dry-run 1 part means that it will simulate the transfer without actually s
 If the transaction fails try to reduce the amount for 0.01 TON and try again.
 
 ## Donations
-If you've found the tool beneficial and would like to show your appreciation, consider buying me a coffee. You can do so by sending TonCoins to my non-Atomic wallet address:
+If you've found the tool beneficial and would like to show your appreciation, consider buying me a coffee. You can do so by sending TonCoins to my wallet address:
 `UQDjx-YFsL1KvbXQQsspn0T96Ac0Wj4__Oo9n4w4meHGyGvP`
 
 # License
-Copyright (c) 2022 Abyrwalk. Licensed under the Apache 2.0 License
+Licensed under the Apache 2.0 License
