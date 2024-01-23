@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "tonweb": "^0.0.62",
+    "tonweb-mnemonic": "^1.0.1",
+    "yargs": "^17.7.2"
+  }
+}
