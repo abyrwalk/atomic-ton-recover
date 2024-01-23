@@ -88,7 +88,7 @@ Options:
   -h, --help                       Show help                           [boolean]
 ```
 
-If everything looks like above, you can start moving your TonCoin.
+If everything looks like above, you can start moving your TonCoin. Otherwise, check that the installation instructions were completed successfully.
 
 To send TonCoin from your old Atomic Wallet to your new wallet, make sure you know how much you have and use that amount in the command below. Please subtract 0.01 TON from the target amount for transfer fees. Here is an example command to transfer the coins:
 
@@ -104,5 +104,5 @@ If the transaction then fails, check that you've entered all the information cor
 If you've found the tool beneficial and would like to show your appreciation, consider buying me a coffee. You can do so by sending TonCoins to my wallet address:
 `UQDjx-YFsL1KvbXQQsspn0T96Ac0Wj4__Oo9n4w4meHGyGvP`
 
-# License
+## License
 Licensed under the Apache 2.0 License
