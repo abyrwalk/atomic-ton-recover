@@ -71,7 +71,7 @@ async function getValidSeqno(wallet, maxRetries = 10, interval = 300) {
         retries++;
         console.log("retrying to get seqno with attempt", retries);
     }
-    throw new Error('Failed to retrieve a valid seqno after maximum retries.');
+    return 0;
 }
 
 
