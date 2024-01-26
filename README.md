@@ -90,15 +90,15 @@ Options:
 
 If everything looks like above, you can start moving your TonCoin. Otherwise, check that the installation instructions were completed successfully.
 
-To send TonCoin from your old Atomic Wallet to your new wallet, make sure you know how much you have and use that amount in the command below. Please subtract 0.01 TON from the target amount for transfer fees. Here is an example command to transfer the coins:
+To send TonCoin from your old Atomic Wallet to your new wallet, make sure you know how much you have and use that amount in the command below. Here is an example command to transfer the coins:
 
 ```
 node recover.js  --sourceAddress "your_atomic_wallet_address" --destinationAddress "your_new_wallet_address" --amount "0.01" --privatekey "your_128_chars_long_private_key" --dry-run 1
 ```
 
-The `--dry-run 1`` part means that it will simulate the transfer without actually sending the coins. Remove `--dry-run 1`` when you're ready to make the real transfer.
+The `--dry-run 1` part means that it will simulate the transfer without actually sending the coins. Remove `--dry-run 1` when you're ready to make the real transfer.
 
-If the transaction then fails, check that you've entered all the information correctly, including the quotation marks. Otherwise, try to reduce the amount by 0.01 TON and try again.
+If the transaction then fails, check that you've entered all the information correctly, including the quotation marks. Otherwise, try to reduce the amount by 0.01 TON to cover the transfer fees and try again.
 
 ## Donations
 If you've found the tool beneficial and would like to show your appreciation, consider buying me a coffee. You can do so by sending TonCoins to my wallet address:
